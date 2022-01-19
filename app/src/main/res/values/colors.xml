@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+        <color name="com_facebook_blue">#1877F2</color>
+        <color name="com_facebook_button_background_color">@color/com_facebook_blue</color>
+        <color name="com_facebook_button_background_color_disabled">#EBEDF0</color>
+        <color name="com_facebook_button_background_color_pressed">#186BDA</color>
+        <color name="com_facebook_device_auth_text">#90949C</color>
+        <color name="com_facebook_likeboxcountview_border_color">#6a7180</color>
+        <color name="com_facebook_likeboxcountview_text_color">#6a7180</color>
+        <color name="com_facebook_likeview_text_color">#6a7180</color>
+        <color name="com_facebook_primary_button_disabled_text_color">#BCC3C9</color>
+        <color name="com_facebook_primary_button_pressed_text_color">#DADDE2</color>
+        <color name="com_facebook_primary_button_text_color">#FFFFFF</color>
+        <color name="com_smart_login_code">#3C6499</color>
+
+
+
+
+
+
+
+
+
+
+
+        <declare-styleable name="com_facebook_like_view">
+            <attr format="color" name="com_facebook_foreground_color"/>
+            <attr format="string" name="com_facebook_object_id"/>
+            <attr name="com_facebook_object_type">
+                <!-- Keep in sync with Enums in Likeview -->
+                <enum name="unknown" value="0"/>
+                <enum name="open_graph" value="1"/>
+                <enum name="page" value="2"/>
+            </attr>
+            <attr name="com_facebook_style">
+                <!-- Keep in sync with Enums in LikeView -->
+                <enum name="standard" value="0"/>
+                <enum name="button" value="1"/>
+                <enum name="box_count" value="2"/>
+            </attr>
+            <attr name="com_facebook_auxiliary_view_position">
+                <!-- Keep in sync with Enums in LikeView -->
+                <enum name="bottom" value="0"/>
+                <enum name="inline" value="1"/>
+                <enum name="top" value="2"/>
+            </attr>
+            <attr name="com_facebook_horizontal_alignment">
+                <!-- Keep in sync with Enums in LikeView -->
+                <enum name="center" value="0"/>
+                <enum name="left" value="1"/>
+                <enum name="right" value="2"/>
+            </attr>
+        </declare-styleable>
+
+
+
+
+
+<color name="com_facebook_button_text_color">
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:state_pressed="true"
+            android:color="@color/com_facebook_primary_button_pressed_text_color"
+            />
+        <item
+            android:state_enabled="false"
+            android:color="@color/com_facebook_primary_button_disabled_text_color"
+            />
+        <item
+            android:color="@color/com_facebook_primary_button_text_color"
+            />
+    </selector>
+
+</color>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#6200ED</color>
+    <color name="purple_700">#FFBB86FC</color>
+    <color name="teal_200">#00D1BD</color>
+    <color name="teal_700">#008180</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="colorDivider">#AFAFAF</color>
+    <color name="colorTextSecondary">#8A8989</color>
+    <color name="colorTextPrimary">#018A89</color>
+    <color name="colorPrimary">#6401F1</color>
+    <color name="colorPrimaryDark">#3801B3</color>
+    <color name="colorAccent">#04DDC8</color>
+    <color name="Ivory">#EDE3E3</color>
+    <color name="Blue">#006BFF</color>
+    <color name="greenDark">#005C04</color>
+
+    <color name="splash_back">#38B6FF</color>
+    <color name="green">#00C51B</color>
+    <color name="red">#F60000</color>
+    <color name="but">#C2CABD</color>
+    <color name="button">#1900FF</color>
+    <color name="color_log_in">#6F5FFF</color>
+
+
+
+    <color name="gradient_start_color">#FF0000</color>
+    <color name="gradient_center_color">#8A0000</color>
+    <color name="gradient_end_color">#C60000</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="background_color_normal">#F4E1E1</color>
+    <color name="background_color_night">#3E3B3B</color>
+
+
+    <color name="textView_headLine_color_normal">#FFBF00</color>
+    <color name="textView_headLine_color_night">#FF6C3E</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

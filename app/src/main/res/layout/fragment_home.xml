@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    tools:ignore="HardcodedText">
+
+    <TableLayout
+        android:layout_width="410dp"
+        android:layout_height="730dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/transparent"
+        android:gravity="bottom"
+        android:paddingBottom="30dp">
+
+        <TableRow
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:gravity="center">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_viewProfileLayout"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@color/white"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/image_viewProfile"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/ic_profile"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewProfile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewProfile"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="Update Profile"
+                    android:textAllCaps="true"
+                    android:textColor="@color/com_facebook_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_viewJobLayout"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@color/white"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/image_viewJob"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/ic_baseline_work_24"
+                    app:layout_constraintBottom_toTopOf="@+id/image_viewJobText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/image_viewJobText"
+                    android:layout_width="110dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="Matching jobs"
+                    android:textAllCaps="true"
+                    android:textColor="@color/com_facebook_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_viewJob" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_viewRequestInterviewLayout"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@color/white"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/image_viewRequestInterview"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/request_interview"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewRequestInterview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewRequestInterview"
+                    android:layout_width="110dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="Request Interview"
+                    android:textAllCaps="true"
+                    android:textColor="@color/com_facebook_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_viewRequestInterview" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:gravity="center">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_viewChatLayout"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@color/white"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/image_viewChat"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/chat1"
+                    app:layout_constraintBottom_toTopOf="@+id/image_viewChatText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/image_viewChatText"
+                    android:layout_width="110dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="HR Chat"
+                    android:textAllCaps="true"
+                    android:textColor="@color/com_facebook_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_viewChat" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_viewScheduleLayout"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@color/white"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/image_viewSchedule"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/calendar"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewSchedule"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewSchedule"
+                    android:layout_width="110dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="Schedule Interview"
+                    android:textAllCaps="true"
+                    android:textColor="@color/com_facebook_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_viewSchedule" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_viewInterviewStatusLayout"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@color/white"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/image_viewInterviewStatus"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/request"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewInterviewStatus"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewInterviewStatus"
+                    android:layout_width="110dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="InterView Status"
+                    android:textAllCaps="true"
+                    android:textColor="@color/com_facebook_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_viewInterviewStatus" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:gravity="center">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_viewScanDocumentLayout"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@color/white"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/image_viewScanDocument"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/scan"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewScanDocument"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewScanDocument"
+                    android:layout_width="110dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="scan document"
+                    android:textAllCaps="true"
+                    android:textColor="@color/com_facebook_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_viewScanDocument" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_viewLearnLayout"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@color/white"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/image_viewLearn"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/learn"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewLearn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewLearn"
+                    android:layout_width="110dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="learning"
+                    android:textAllCaps="true"
+                    android:textColor="@color/com_facebook_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_viewLearn" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_viewSupportLayout"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@color/white"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/image_viewSupport"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/support"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewSupport"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewSupport"
+                    android:layout_width="110dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="24/7 help"
+                    android:textAllCaps="true"
+                    android:textColor="@color/com_facebook_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_viewSupport" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
